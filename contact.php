@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Agar koi field khali ho to error show karen
     if (empty($name) || empty($email) || empty($message)) {
-        http_response_code(400); // Bad Request status code
+        http_response_code(400);
         echo "<h2 style='color:red;'>❌ Please fill out all fields.</h2>";
         exit;
     }
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email details set karen
-    $to = "muh2007abdullah@gmail.com";  // Apna email yahan likhen
+    $to = "muh2007abdullah@gmail.com"; 
     $subject = "Naya Contact Form Submission: " . $name;
     
     // Email headers
@@ -37,15 +37,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Mail function se email bhej den
     if (mail($to, $subject, $body, $headers)) {
-        http_response_code(200); // OK status code
+        http_response_code(200);
         echo "<h2 style='color:green;'>✅ Thank you! Your message has been sent successfully.</h2>";
     } else {
-        http_response_code(500); // Internal Server Error status code
+        http_response_code(500);
         echo "<h2 style='color:red;'>❌ Sorry, something went wrong. Please try again later.</h2>";
     }
 
 } else {
-    // Agar direct access ho to 403 Forbidden error show karen
     http_response_code(403);
     echo "<h2 style='color:red;'>❌ Error: Forbidden. Direct access is not allowed.</h2>";
 }
