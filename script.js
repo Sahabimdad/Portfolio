@@ -1,67 +1,70 @@
-// Hamburger menu toggle
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector(".nav-links");
+// ===== Professional Script.js =====
 
-hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
+// Mobile Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
 
-// Close mobile menu when a nav link is clicked
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("show");
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+    const icon = hamburger.querySelector('i');
+    if (navLinks.classList.contains('show')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
   });
-});
 
-// Contact Form Validation
-const contactForm = document.getElementById("contactForm");
+  // Close mobile menu when clicking any nav link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('show');
+      const icon = hamburger.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    });
+  });
+}
+
+// Contact Form Validation & Submission Handling
+const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Page reload rokne ke liye
-
-    let valid = true;
-
-    // Clear error messages
-    document.getElementById("nameError").innerText = "";
-    document.getElementById("emailError").innerText = "";
-    document.getElementById("messageError").innerText = "";
-    document.getElementById("formMessage").innerText = "";
-
-    // Name Validation
-    const name = document.getElementById("name").value.trim();
-    if (name.length < 3) {
-      document.getElementById("nameError").innerText = "Name must be at least 3 characters.";
-      valid = false;
+  contactForm.addEventListener('submit', function(e) {
+    // Agar aap PHP backend ke zariye mail bhej rahe hain toh default submit chalne dein,
+    // ya agar AJAX validation karni hai toh neeche ka logic use hoga:
+    
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    let isValid = true;
+    
+    // Simple basic checks
+    if (name === '') {
+      document.getElementById('nameError').innerText = 'Please enter your name.';
+      isValid = false;
+    } else {
+      document.getElementById('nameError').innerText = '';
     }
-
-    // Email Validation
-    const email = document.getElementById("email").value.trim();
-    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if (!email.match(emailPattern)) {
-      document.getElementById("emailError").innerText = "Enter a valid email.";
-      valid = false;
+    
+    if (email === '' || !email.includes('@')) {
+      document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+      isValid = false;
+    } else {
+      document.getElementById('emailError').innerText = '';
     }
-
-    // Message Validation
-    const message = document.getElementById("message").value.trim();
-    if (message.length < 10) {
-      document.getElementById("messageError").innerText = "Message must be at least 10 characters.";
-      valid = false;
+    
+    if (message === '') {
+      document.getElementById('messageError').innerText = 'Please write a message.';
+      isValid = false;
+    } else {
+      document.getElementById('messageError').innerText = '';
     }
-
-    // Agar saare fields valid hain
-    if (valid) {
-      const formMessage = document.getElementById("formMessage");
-      formMessage.innerText = "Shukriya! Aapka message bhej diya gaya hai.";
-      formMessage.style.color = "#00adb5";
-
-      // Form reset
-      contactForm.reset();
-
-      // 5 seconds baad message remove kar dein
-      setTimeout(() => {
-        formMessage.innerText = "";
-      }, 5000);
+    
+    if (!isValid) {
+      e.preventDefault(); // Form submit hone se rok dega agar errors hon
     }
   });
 }
