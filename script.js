@@ -1,70 +1,58 @@
-// ===== Professional Script.js =====
+// Hamburger menu ka code
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector(".nav-links");
 
-// Mobile Hamburger Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
 
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    const icon = hamburger.querySelector('i');
-    if (navLinks.classList.contains('show')) {
-      icon.classList.remove('fa-bars');
-      icon.classList.add('fa-times');
-    } else {
-      icon.classList.remove('fa-times');
-      icon.classList.add('fa-bars');
-    }
-  });
 
-  // Close mobile menu when clicking any nav link
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
-      const icon = hamburger.querySelector('i');
-      icon.classList.remove('fa-times');
-      icon.classList.add('fa-bars');
-    });
-  });
-}
+// Contact Form ka code
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Ye line sabse zaruri hai taake page reload na ho
 
-// Contact Form Validation & Submission Handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    // Agar aap PHP backend ke zariye mail bhej rahe hain toh default submit chalne dein,
-    // ya agar AJAX validation karni hai toh neeche ka logic use hoga:
-    
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    
-    let isValid = true;
-    
-    // Simple basic checks
-    if (name === '') {
-      document.getElementById('nameError').innerText = 'Please enter your name.';
-      isValid = false;
-    } else {
-      document.getElementById('nameError').innerText = '';
-    }
-    
-    if (email === '' || !email.includes('@')) {
-      document.getElementById('emailError').innerText = 'Please enter a valid email address.';
-      isValid = false;
-    } else {
-      document.getElementById('emailError').innerText = '';
-    }
-    
-    if (message === '') {
-      document.getElementById('messageError').innerText = 'Please write a message.';
-      isValid = false;
-    } else {
-      document.getElementById('messageError').innerText = '';
-    }
-    
-    if (!isValid) {
-      e.preventDefault(); // Form submit hone se rok dega agar errors hon
-    }
-  });
-}
+  let valid = true;
+
+  // Pehle saare error messages aur success message ko saaf (clear) karein
+  document.getElementById("nameError").innerText = "";
+  document.getElementById("emailError").innerText = "";
+  document.getElementById("messageError").innerText = "";
+  document.getElementById("formMessage").innerText = "";
+
+  // Name Validation
+  const name = document.getElementById("name").value.trim();
+  if (name.length < 3) {
+    document.getElementById("nameError").innerText = "Name must be at least 3 characters.";
+    valid = false;
+  }
+
+  // Email Validation
+  const email = document.getElementById("email").value.trim();
+  const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    document.getElementById("emailError").innerText = "Enter a valid email.";
+    valid = false;
+  }
+
+  // Message Validation
+  const message = document.getElementById("message").value.trim();
+  if (message.length < 10) {
+    document.getElementById("messageError").innerText = "Message must be at least 10 characters.";
+    valid = false;
+  }
+
+  // Agar saare fields sahi hain to success message dikhao
+  if (valid) {
+    const formMessage = document.getElementById("formMessage");
+    formMessage.innerText = "Shukriya! Aapka message bhej diya gaya hai.";
+    formMessage.style.color = "green";
+
+    // Form ko reset karein
+    document.getElementById("contactForm").reset();
+
+    // 5 seconds ke baad message hata dein
+    setTimeout(() => {
+      formMessage.innerText = "";
+    }, 5000);
+  }
+});
