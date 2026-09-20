@@ -8,271 +8,513 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Right Side Floating Social Sidebar -->
+  <div class="floating-social-sidebar">
+    <a href="https://www.linkedin.com/in/sahab-imdad-954415317" target="_blank" class="social-circle"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Sahabimdad" target="_blank" class="social-circle"><i class="fab fa-github"></i></a>
+    <a href="mailto:muh2007abdullah@gmail.com" target="_blank" class="social-circle"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.youtube.com/" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.instagram.com/_rajput_706" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <!-- Header -->
   <header>
     <div class="navbar">
+      <!-- Logo Image -->
       <div class="logo">
-        <img src="images/logo.png">
-        <span>Sahab Imdad</span>
+          <img src="images/logo.png" alt="Sahab Imdad" class="logo-img">
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#what-i-do">What I do</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#tools">Tools & Widgets</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div id="hamburger">☰</div>
+      <div id="hamburger"><i class="fas fa-bars"></i></div>
     </div>
   </header>
+
+  <!-- Hero Section -->
   <section id="hero" class="hero">
-    <h1><span>Hi, I'm Sahab Imdad</span></h1>
-    <h2>Web Developer | Full Stack | WordPress Expert</h2>
-    <a href="files/Sahab-Imdad-CV.pdf" class="btn" target="_blank">View Resume</a>
-    <a href="#contact" class="btn">Hire Me</a>
+    <div class="hero-content">
+      <span class="hero-subtitle">Hi, I'm Sahab Imdad</span>
+      <h1>Software Developer & Full-Stack Engineer</h1>
+      <p>Transforming ideas into interactive and seamless digital experiences with cutting-edge frontend, backend, and mobile development.</p>
+      <div class="hero-btns">
+        <a href="files/Sahab-Imdad-CV.pdf" class="btn primary-btn" target="_blank">View Resume</a>
+        <a href="#contact" class="btn secondary-btn">Hire Me</a>
+      </div>
+    </div>
   </section>
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Web Developer & Tutor with expertise in HTML, CSS, JavaScript, PHP,
-      and WordPress. I love teaching and creating modern responsive websites.
-    </p>
-    <a href="https://wa.me/971553536233" target="_blank" class="whatsapp-btn">
-      <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </a>
-  </section>
-  <!-- Social Sidebar -->
-<div class="social-sidebar-right">
-  <a href="https://www.linkedin.com/in/sahab-imdad-954415317" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-  <a href=https://github.com/Sahabimdad target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-  <a href="muh2007abdullah@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
-  <a href="https://www.youtube.com/@Faithful_Journeys06" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
-  <a href="https://www.instagram.com/_rajput_706/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-</div>
 
- <div class="main-content">
-  <!-- Left column: Experience -->
-  <div class="left-column">
-    <section id="experience" class="experience">
-      <h2>Experience</h2>
-      <div class="exp-card">
-        <h3>Freelance Web Developer</h3>
-        <span class="exp-date">2022 - Present</span>
-        <p>
-          Worked with clients on <strong>custom websites, WordPress solutions, and e-commerce platforms</strong>.
-          Developed responsive web applications using <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.
-        </p>
-        <ul>
-          <li>Designed and developed WordPress websites with custom themes & plugins.</li>
-          <li>Built responsive and SEO-friendly portfolio and business sites.</li>
-          <li>Integrated APIs, payment gateways, and database systems.</li>
-        </ul>
-      </div>
-      <div class="exp-card">
-        <h3>Full Stack Developer</h3>
-        <span class="exp-date">2023 - Present</span>
-        <p>
-          Assisted in building and deploying full stack projects while collaborating with senior developers.
-        </p>
-        <ul>
-          <li>Created dynamic frontends with HTML, CSS, JavaScript, Bootstrap.</li>
-          <li>Worked on backend logic with PHP and MySQL.</li>
-          <li>Used Git & GitHub for version control.</li>
-        </ul>
-      </div>
-    </section>
+  <!-- Skills Train -->
+  <div class="skills-train-section">
+    <div class="train-container">
+      <div class="train-item"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</div>
+      <div class="train-item"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</div>
+      <div class="train-item"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+      <div class="train-item"><i class="fab fa-php" style="color: #777bb3;"></i> PHP</div>
+      <div class="train-item"><i class="fas fa-database" style="color: #00758f;"></i> MySQL</div>
+      <div class="train-item"><i class="fab fa-flutter" style="color: #02569b;"></i> Flutter</div>
+      <div class="train-item"><i class="fab fa-dart" style="color: #0175c2;"></i> Dart</div>
+      <div class="train-item"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git</div>
+      <div class="train-item"><i class="fab fa-wordpress" style="color: #21759b;"></i> WordPress</div>
+      <div class="train-item"><i class="fab fa-python" style="color: #3776ab;"></i> Python</div>
+      <div class="train-item"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</div>
+      <div class="train-item"><i class="fas fa-fire" style="color: #ffca28;"></i> Firebase</div>
+      <!-- Duplicate for smooth loop -->
+      <div class="train-item"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</div>
+      <div class="train-item"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</div>
+      <div class="train-item"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
+      <div class="train-item"><i class="fab fa-php" style="color: #777bb3;"></i> PHP</div>
+      <div class="train-item"><i class="fas fa-database" style="color: #00758f;"></i> MySQL</div>
+      <div class="train-item"><i class="fab fa-flutter" style="color: #02569b;"></i> Flutter</div>
+      <div class="train-item"><i class="fab fa-dart" style="color: #0175c2;"></i> Dart</div>
+      <div class="train-item"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git</div>
+      <div class="train-item"><i class="fab fa-wordpress" style="color: #21759b;"></i> WordPress</div>
+      <div class="train-item"><i class="fab fa-python" style="color: #3776ab;"></i> Python</div>
+      <div class="train-item"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</div>
+      <div class="train-item"><i class="fas fa-fire" style="color: #ffca28;"></i> Firebase</div>
+    </div>
   </div>
 
-  <!-- Right column: Skills & Tools -->
-  <div class="right-column">
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>Java</span>
-        <span>C/C++</span>
-        <span>Python</span>
-        <span>PHP</span>
-        <span>MySQL</span>
-        <span>WordPress</span>
-        <span>Bootstrap</span>
-        <span>UI/UX Design</span>
-        <span>Responsive Design</span>
-        <span>Web Hosting</span>
-        <span>Website Security</span>
-        <span>Project Management</span>
+  <!-- What I Do Section -->
+  <section id="what-i-do" class="what-i-do-section">
+    <h2>What I do?</h2>
+    <div class="what-i-do-grid">
+      <div class="accordion-box">
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <i class="fas fa-code"></i> Web Development <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Building responsive, dynamic, and high-performance websites using PHP, MySQL, JavaScript, and modern frameworks.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <i class="fas fa-mobile-alt"></i> Mobile Development <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Creating cross-platform mobile apps and native experiences using Flutter, Dart, and Firebase integration.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <i class="fas fa-paint-brush"></i> UI/UX Design & Prototyping <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Designing user-centric interfaces, layouts, and interactive wireframes ensuring smooth user experiences.</p>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="code-preview-box">
+        <code id="matrixCode">
+          &gt;, ICX:- [7_BW!M&lt;ME;=[9BC{G!CT,SZ&amp;QQSF&amp;P)&lt;B0:[]X},C7+3/ <br>
+          :K!P_BLZSC$)}&lt;JRM7PN5GIS#NYM!]5W]5&lt;EZ+9[/IT)6/#9LXH2# <br>
+          B_V@B(5G&lt;E2W$WUXW[Z&amp;NR3KMNWJT}}(D)BPR}I07&amp;3L04;E[,WW <br>
+          &lt;[U@J9H$LU9T,}YLLX)+;3] -==)&amp;A:Z{RQK9A08S=V0G}I&gt;FHDM14 <br>
+          [;M[NA-:P/XYU&amp;AH&lt;HZ7Z4FC&amp;PMT!8&lt;-*)}0Y&gt;,08MSRM#KTS80 <br>
+          1I[KAS]_YXN6JTXNSL7J9XBWK[]&amp;U716 LHL=WAS{P}RT$-V75
+        </code>
+      </div>
+    </div>
+  </section>
 
-    <section id="tools" class="tools">
-      <h2>Tools</h2>
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>
+        I’m a <strong>Full-Stack Web & Android Developer</strong> with hands-on experience in building custom, responsive, and secure solutions. 
+        My journey encompasses building complex systems like a <strong>Faculty & Student Management App (Flutter/Firebase)</strong>, 
+        e-commerce storefronts, and interactive web platforms. 
+      </p>
+      <p>
+        I specialize in <strong>WordPress, PHP, and Mobile App Development</strong>. With expertise in <strong>Cybersecurity foundations</strong>, 
+        I focus on creating modern, user-friendly, and secure digital products. 
+      </p>
+      <a href="https://wa.me/971553536233" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Experience Section (Newly Added) -->
+  <section id="experience" class="experience-section">
+    <div class="experience-container">
+      <span class="experience-badge">CAREER PATH</span>
+      <h2>Professional Experience</h2>
+      <p class="experience-subtitle">A timeline of my professional roles, development specialization, and practical contributions.</p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">August 2022 - Present</div>
+          <div class="timeline-content">
+            <h3>Full-Stack Web & Android Developer</h3>
+            <span class="timeline-company">Freelance / Independent</span>
+            <p>Building tailored, secure, and responsive web applications and cross-platform mobile solutions. Managing complete software lifecycles from architecture design to database configuration and secure deployment.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">February 2024 - July 2024</div>
+          <div class="timeline-content">
+            <h3>Web Development Specialist</h3>
+            <span class="timeline-company">Government Digital Portal Bootcamp (PSDI)</span>
+            <p>Served as a core developer during an intensive web architecture bootcamp. Developed backend systems, relational database modules, and optimized performance workflows using PHP, MySQL, and Bootstrap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools & Widgets Section -->
+  <section id="tools" class="tools-widgets-section">
+    <div class="tools-container">
+      <span class="tools-badge">COMPONENTS</span>
+      <h2>Most used tools & widgets</h2>
+      <p class="tools-subtitle">Provides frequently used development tools and workflow assets for building high-end applications.</p>
+      
       <div class="tools-grid">
-        <span>Git & GitHub</span>
-        <span>VS Code</span>
-        <span>XAMPP</span>
-        <span>Wamp Service</span>
-        <span>cPanel</span>
-        <span>Canva</span>
-        <span>Google Analytics</span>
-        <span>WordPress.org</span>
-        <span>Elementor</span>
-        <span>WooCommerce</span>
-        <span>phpMyAdmin</span>
-        <span>infinityfree(hosting)</span>
-
-      </div>
-    </section>
-  </div>
-</div>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p class="projects-intro">
-      Here are some of the projects I have worked on using modern web technologies.
-      These projects highlight my skills in front-end, back-end, and WordPress development.
-    </p>
-    <div class="project-card">
-      <img src="images/JW.PNG" alt="E-Commerce Store Screenshot" class="project-img">
-      <div class="project-content">
-        <h3>Luxury Jewellery Store</h3>
-        <p>
-          A fully functional online store built with <strong>HTML, CSS, JavaScript, PHP, and MySQL</strong>.
-          Features include product catalog, cart system, checkout, and payment integration.
-        </p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+        <div class="tool-card">
+          <i class="fab fa-git-alt" style="color: #f05032;"></i>
+          <h3>Git & GitHub</h3>
+          <p>Version control, branch management, and collaborative software development tracking.</p>
         </div>
-        <div class="project-links">
-          <a href="https://sahabjewels.42web.io/" target="_blank">View Project</a>
+        <div class="tool-card">
+          <i class="fas fa-code" style="color: #007acc;"></i>
+          <h3>VS Code & Android Studio</h3>
+          <p>Primary IDE environments configured for full-stack web and mobile application debugging.</p>
         </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="images/cb.PNG" alt="Recipe Website Screenshot" class="project-img">
-      <div class="project-content">
-        <h3>Online Recipe Website</h3>
-        <p>
-          Created a dynamic recipe-sharing website.This collection is designed for those who love simple, home-style meals with a touch of warmth. Each recipe is crafted with easily available ingredients and minimal steps, so you can cook quickly without stress
-        </p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+        <div class="tool-card">
+          <i class="fas fa-server" style="color: #22c55e;"></i>
+          <h3>XAMPP & Wamp Server</h3>
+          <p>Local database hosting and server testing setups for dynamic PHP-MySQL applications.</p>
         </div>
-        <div class="project-links">
-          <a href="https://sahabimdad.github.io/Mini-Recipe-eBook/" target="_blank">View Project</a>
+        <div class="tool-card">
+          <i class="fab fa-wordpress" style="color: #21759b;"></i>
+          <h3>WordPress & cPanel</h3>
+          <p>Content management systems, theme customization, and web hosting server management.</p>
         </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="images/dd.PNG" alt="Recipe Website Screenshot" class="project-img">
-      <div class="project-content">
-        <h3>DonutDilemma-Fresh Homemade Donuts</h3>
-        <p>
-          DonutDilemma is an online donut ordering website that delivers fresh, handcrafted donuts exclusively in Lahore. The site includes a simple menu, easy ordering system, and responsive design for mobile users. It highlights Lahore-only delivery, quick service, and premium quality donuts. 
-        </p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+        <div class="tool-card">
+          <i class="fas fa-fire" style="color: #ffca28;"></i>
+          <h3>Firebase & Firestore</h3>
+          <p>Realtime database synchronization, cloud hosting, and secure user authentication rules.</p>
         </div>
-        <div class="project-links">
-          <a href="https://donutdilemma.unaux.com/" target="_blank">View Project</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="images/ht.PNG" alt="Recipe Website Screenshot" class="project-img">
-      <div class="project-content">
-        <h3>Codex (Learn Coding & Build Projects)</h3>
-        <p>
-           Codex allows you to practice your coding skills with live compilers and build practical projects.Codex offers interactive courses and free online compilers across 8 popular programming languages. Currently, the HTML5 course is complete, and other courses are coming soon!
-        </p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
-        </div>
-        <div class="project-links">
-          <a href="https://sahabcodex.42web.io/" target="_blank">View Project</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="images/PF.PNG" alt="Custom Portfolio Screenshot" class="project-img">
-      <div class="project-content">
-        <h3>Custom Portfolio</h3>
-        <p>
-          Designed and developed a personal portfolio using <strong>Visual Studio Code </strong> with custom theme,
-          plugins, and SEO optimization for better visibility.
-        </p>
-        <div class="project-tags">
-          <span>VS Code</span><span>HTML</span><span>CSS</span><span>PHP</span><span>JavaScript</span><span>Responsive Design</span>
-        </div>
-        <div class="project-links">
-          <a href="#" target="_blank">View Project</a>
+        <div class="tool-card">
+          <i class="fab fa-python" style="color: #3776ab;"></i>
+          <h3>Python Flask & REST APIs</h3>
+          <p>Microservice routing, backend logic processing, and structured API endpoint design.</p>
         </div>
       </div>
     </div>
   </section>
- <section id="contact">
-  <h2>Contact Me</h2>
-  <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
 
-  <form>
-    <div class="form-group">
-      <input type="text" id="name" required>
-      <label for="name">Full Name</label>
+  <!-- Featured Projects Section -->
+<section id="projects" class="projects-blueprint-section">
+  <div class="blueprint-header">
+    <span class="inside-badge">INSIDE PORTFOLIO</span>
+    <h2>Sahab's Projects: Fun Meets Functionality!</h2>
+  </div>
+
+  <!-- Project 1: College Management App -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/App.jpg" alt="College Management App">
     </div>
-    <div class="form-group">
-      <input type="email" id="email" required>
-      <label for="email">Email Address</label>
+    <div class="blueprint-content-box">
+      <h3>College Management App (Final Year Project)</h3>
+      <p>A comprehensive multi-role mobile application built for academic institutional management.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Role-Based Dashboards & Attendance</h4>
+          <p>Features dedicated student portals, teacher assignment panels, and complete administrative control using Flutter and Firebase.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="https://github.com/Sahabimdad" target="_blank" class="view-project-btn">
+          <span>View Project</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
-    <div class="form-group">
-      <textarea id="message" required></textarea>
-      <label for="message">Your Message</label>
+  </div>
+  <!-- Project 2: Codeex -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/ht.PNG" alt="Codex">
     </div>
-    <button type="submit">Send Message</button>
-  </form>
+    <div class="blueprint-content-box">
+      <h3>Codeex (Interactive Learning Platform)</h3>
+      <p>An interactive educational coding platform designed for students and developers to practice and explore code.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Interactive Resources & Compilers</h4>
+          <p>Provides built-in learning resources, code snippets, and structured exercises powered by PHP, MySQL, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="https://codeex.unaux.com/?i=1" target="_blank" class="view-project-btn">
+          <span>Live Preview</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3: DonutDilemma -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/dd.PNG" alt="DonutDilemma">
+    </div>
+    <div class="blueprint-content-box">
+      <h3>DonutDilemma - Fresh Homemade Donuts</h3>
+      <p>An intuitive e-commerce food delivery storefront for ordering fresh snacks online with smooth UX.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Dynamic Storefront & Admin Panel</h4>
+          <p>Includes product catalog filtering, secure checkout workflows, and backend inventory management.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="https://donutdilemma.unaux.com/" target="_blank" class="view-project-btn">
+          <span>Live Preview</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Project 4: Luxury Jewellery -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/luxury.png" alt="Luxury Jewellery">
+    </div>
+    <div class="blueprint-content-box">
+      <h3>Luxury Jewellery Storefront</h3>
+      <p>An exquisite e-commerce platform built for high-end luxury ornaments and modern jewelry shopping.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Elegant UI & Catalog Filtering</h4>
+          <p>Features responsive product browsing, sleek aesthetic design, and seamless user navigation.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="https://luxuryjewellery.unaux.com/?i=2" target="_blank" class="view-project-btn">
+          <span>Live Preview</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 5: Mini Recipe eBook -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/JW.PNG" alt="Mini Recipe eBook">
+    </div>
+    <div class="blueprint-content-box">
+      <h3>Mini Recipe eBook & Cooking Book</h3>
+      <p>A responsive recipe management portal featuring search, category filtering, and clean layout design.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Lightning-Fast Search & Categories</h4>
+          <p>Engineered with smooth JavaScript search filters, responsive recipe cards, and modular frontend components.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="https://sahabimdad.github.io/Mini-Recipe-eBook/" target="_blank" class="view-project-btn">
+          <span>Live Preview</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 6: Portfolio Project (Extra Added) -->
+  <div class="blueprint-row">
+    <div class="blueprint-img-box">
+      <img src="images/logo.png" alt="Developer Portfolio">
+    </div>
+    <div class="blueprint-content-box">
+      <h3>Sahab Imdad - Personal Tech Portfolio</h3>
+      <p>A modern, highly optimized developer portfolio showcasing professional experience, projects, and tech stack.</p>
+      <div class="blueprint-feature">
+        <div class="check-icon"><i class="fas fa-check"></i></div>
+        <div>
+          <h4>Responsive UI & Floating Toolbars</h4>
+          <p>Features custom CSS animations, smooth layout structuring, dynamic timelines, and direct contact widgets.</p>
+        </div>
+      </div>
+      <div class="project-btn-container">
+        <a href="#hero" class="view-project-btn">
+          <span>View Source</span> <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
-  <!-- Footer Section -->
-<footer class="main-footer">
-  <div class="main-container">
-    <div class="main-footer__upper">
-      <!-- Social Section -->
-      <div class="main-footer__row main-footer__row-1">
-        <h2 class="heading heading-sm main-footer__heading-sm">
-          <span>Social</span>
-        </h2>
-        <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sahab-imdad-954415317">
-            <i class="fab fa-linkedin main-footer__icon"></i>
-            </a>
-            <a target="_blank" rel="noreferrer" href=https://github.com/Sahabimdad>
-            <i class="fab fa-github main-footer__icon"></i>
-            </a>
-            <a target="_blank" rel="noreferrer" href="muh2007abdullah@gmail.com">
-            <i class="fas fa-envelope main-footer__icon"></i>
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_rajput_706">
-            <i class="fab fa-instagram main-footer__icon"></i>
-          </a>
-          </div>
-          </div>
-      <!-- About Section -->
-      <div class="main-footer__row main-footer__row-2">
-        <h2 class="heading heading-sm text-lt">Sahab Imdad</h2>
-        <p class="main-footer__short-desc">
-          A passionate Web Developer crafting responsive websites with
-          HTML, CSS, JavaScript, PHP and MySQL. Focused on building modern and user-friendly applications.
-        </p>
+
+  <!-- Certifications Section -->
+  <section id="certificates" class="certificates-blog-section">
+    <div class="cert-blog-header">
+      <div>
+        <h2>Explore Certifications in our Registry</h2>
+        <a href="javascript:void(0);" id="toggleCertsBtn" class="view-all-link">View all credentials &raquo;</a>
+      </div>
+      <p class="cert-header-desc">Certifications represent continuous learning. Each credential validates practical expertise in software engineering, mobile development, and security.</p>
+    </div>
+
+    <!-- Top Grid Cards -->
+    <div class="cert-cards-grid">
+      <div class="cert-item-card">
+        <img src="images/App.jpg" alt="Flutter Cert">
+        <h3>Mobile App Development Bootcamp</h3>
+        <p>Mastered cross-platform application design, state management, and Firebase backend integration via Udemy.</p>
+      </div>
+      <div class="cert-item-card">
+        <img src="images/ht.PNG" alt="Cybersecurity Cert">
+        <h3>Google Cybersecurity Professional</h3>
+        <p>Completed intensive training covering security frameworks, risk management protocols, and system protection.</p>
+      </div>
+      <div class="cert-item-card">
+        <img src="images/dd.PNG" alt="Web Development Cert">
+        <h3>Full-Stack Web Bootcamp (PSDI)</h3>
+        <p>Built robust backend web architectures, relational database systems, and dynamic CMS solutions.</p>
+      </div>
+      <div class="cert-item-card">
+        <img src="images/JW.PNG" alt="WordPress Cert">
+        <h3>WordPress Development Specialist</h3>
+        <p>Certified in advanced theme customization, WooCommerce store setup, and search engine optimization.</p>
       </div>
     </div>
 
-    <!-- Lower Footer -->
-    <div class="main-footer__lower">
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-      &copy; Sahab Imdad. All rights reserved.
+    <!-- Dropdown / Hidden Detailed Certifications List -->
+    <div id="detailedCertsDropdown" class="detailed-certs-dropdown">
+      <h3 class="dropdown-main-heading">Certifications & Professional Training</h3>
+      <p class="cert-intro">I have earned over 20+ professional certifications from global platforms like <strong>Google, Coursera, Udemy, and DigiSkills</strong>.</p>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <img src="certificates/ud2.jpg" alt="Flutter & Dart Certificate">
+          <div class="cert-info">
+            <h4>Mobile App Development</h4>
+            <p>Flutter & Firebase (Udemy)</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="certificates/ud1.jpg" alt="Cybersecurity Certificate">
+          <div class="cert-info">
+            <h4>Cybersecurity Professional</h4>
+            <p>Foundations & Risk Management (Google)</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <img src="certificates/ud.jpg" alt="WordPress Certificate">
+          <div class="cert-info">
+            <h4>Full-Stack Web & CMS</h4>
+            <p>PHP, MySQL & WordPress (PSDI/DigiSkills)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="detailed-certs">
+        <div class="cert-category">
+          <h3><i class="fas fa-mobile-alt"></i> Mobile & App Development</h3>
+          <ul>
+            <li>Build Mobile App with Flutter & Dart</li>
+            <li>Real-world Chat App with Firebase (Udemy)</li>
+            <li>Flutter Firebase Masterclass</li>
+            <li>Udemy Flutter Bootcamp</li>
+          </ul>
+        </div>
+
+        <div class="cert-category">
+          <h3><i class="fas fa-code"></i> Web & Full-Stack</h3>
+          <ul>
+            <li>Complete CMS Blog (PHP, MySQL & PDO)</li>
+            <li>Web Application Architecture (Coursera)</li>
+            <li>WordPress Development Specialist</li>
+            <li>Responsive Web Design & JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="cert-category">
+          <h3><i class="fas fa-shield-alt"></i> Security & IT Management</h3>
+          <ul>
+            <li>Foundations of Cybersecurity (Google)</li>
+            <li>Play It Safe: Risk Management (Google)</li>
+            <li>Project Management Certificate (Google)</li>
+            <li>Computing and IT Foundations</li>
+          </ul>
+        </div>
+
+        <div class="cert-category">
+          <h3><i class="fas fa-user-tie"></i> Professional Skills</h3>
+          <ul>
+            <li>Freelancing (DigiSkills)</li>
+            <li>Graphic Design & UI Basics</li>
+            <li>GitHub & Version Control Essentials</li>
+            <li>Data Visualization Techniques</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section-modern">
+    <div class="contact-wrapper">
+      <div class="contact-info-left">
+        <span class="contact-subtitle">Let's talk</span>
+        <h2>Contact</h2>
+        <p>Have a question or a project in mind? Feel free to reach out directly.</p>
+        <p class="contact-location">Location: <strong>Lahore, Pakistan</strong></p>
+      </div>
+      <div class="contact-form-right">
+        <form action="https://formspree.io/f/mkogdaww" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="submit-btn-modern">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row">
+          <h2 class="heading heading-sm main-footer__heading-sm"><span>Social</span></h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" href="https://www.linkedin.com/in/sahab-imdad-954415317"><i class="fab fa-linkedin main-footer__icon"></i></a>
+            <a target="_blank" href="https://github.com/Sahabimdad"><i class="fab fa-github main-footer__icon"></i></a>
+            <a target="_blank" href="mailto:muh2007abdullah@gmail.com"><i class="fas fa-envelope main-footer__icon"></i></a>
+            <a target="_blank" href="https://www.instagram.com/_rajput_706"><i class="fab fa-instagram main-footer__icon"></i></a>
+          </div>
+        </div>
+        <div class="main-footer__row">
+          <h2 class="heading heading-sm text-lt">Sahab Imdad</h2>
+          <p class="main-footer__short-desc">I’m a <b>Full-Stack Web & Android Developer</b> specializing in robust web and mobile software solutions.</p>
+        </div>
+      </div>
+      <div class="main-footer__lower">
+        &copy; <script>document.write(new Date().getFullYear());</script> Sahab Imdad. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js" defer></script>
 </body>
 </html>
